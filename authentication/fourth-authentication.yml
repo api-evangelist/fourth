@@ -1,0 +1,35 @@
+generated: '2026-07-19'
+method: searched
+source: https://developer.fourth.com/en-gb/docs/authenticating-oauth
+docs: https://developer.fourth.com/en-gb/docs/authenticating-oauth
+summary:
+  types: [oauth2, http]
+  http_schemes: [basic, bearer]
+  oauth2_flows: [clientCredentials, password]
+schemes:
+- name: OAuth2
+  type: oauth2
+  flows:
+  - flow: clientCredentials
+    tokenUrl: '[ROOT]/oauth/connect/token'
+    notes: Expected approach for almost all use cases; client_id + client_secret issued by Fourth.
+  - flow: password
+    tokenUrl: '[ROOT]/oauth/connect/token'
+    notes: For credentials of a Fourth end user rather than an application.
+  bearer_format: 'Authorization: Bearer [access_token]'
+  token_lifetime: expires_in seconds (e.g. 3600 = 1 hour); refresh_token may be returned.
+  scope_note: >-
+    Scopes are per-API and listed on each API reference page under the
+    Authentication heading (e.g. NotificationService for the Notifications API).
+  applies_to: [Tasks API, Notifications API, and other OAuth-enabled Fourth APIs]
+- name: BasicAuth
+  type: http
+  scheme: basic
+  notes: >-
+    base64(username:password) in the Authorization header; accepted for APIs that
+    otherwise require OAuth when testing in Swagger UI, and used by several Adaco/legacy APIs.
+provisioning:
+  notes: >-
+    Production and test host locations and credentials are not published; mutual
+    customers request credentials from Fourth (2-4 week provisioning). Adaco users
+    can self-generate credentials.
