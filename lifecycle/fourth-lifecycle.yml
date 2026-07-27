@@ -1,0 +1,22 @@
+generated: '2026-07-19'
+method: searched
+source: https://developer.fourth.com/en-gb/docs/whats-new
+versioning:
+  scheme: per-api
+  docs: https://developer.fourth.com/en-gb/docs/whats-new
+  notes: >-
+    Fourth versions APIs independently (e.g. POS Gateway "old" vs POS Transaction
+    API). No single platform version string.
+deprecation:
+  policy_url: https://developer.fourth.com/en-gb/docs/whats-new
+  notes: >-
+    Deprecations announced via the developer portal "What's New" page; e.g. TLS 1.0/1.1
+    retirement announced 2023-08-20, enforced 2024-01-09.
+  sunset_header: false
+status_page: https://status.fourth.com
+status_page_provider: Atlassian Statuspage
+status_regions: [US, EMEA, APAC]
+status_subscribe: [email, sms, slack, webhook]
+sla:
+  url: null
+  uptime_observed: 99.69%-100% over trailing 90 days (per status.fourth.com)

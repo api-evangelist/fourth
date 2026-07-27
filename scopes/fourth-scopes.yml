@@ -1,0 +1,19 @@
+generated: '2026-07-19'
+method: searched
+source: https://developer.fourth.com/en-gb/docs/authenticating-oauth
+docs: https://developer.fourth.com/en-gb/docs/authenticating-oauth
+schemes:
+- name: OAuth2
+  flows:
+  - flow: clientCredentials
+    tokenUrl: '[ROOT]/oauth/connect/token'
+scopes:
+- scope: NotificationService
+  description: Access to the Fourth Notifications API.
+  flows: [clientCredentials]
+  api: Notifications API
+notes: >-
+  Fourth documents OAuth scopes per-API on each reference page under the
+  Authentication heading; only NotificationService is given as a published
+  example in the OAuth guide. Additional per-API scopes exist on the individual
+  reference pages but production hosts/specs are not publicly disclosed.

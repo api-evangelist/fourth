@@ -1,7 +1,18 @@
 aid: fourth
 name: Fourth
-description: Fourth is a company surfaced as a portfolio company of insight-partners and added to the
-  API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Fourth is an AI-powered workforce management and inventory platform built for
+  restaurants and hospitality, uniting recruiting, HR, payroll, labor scheduling,
+  purchasing, and inventory management in a single system across 120,000+ locations
+  globally (customers include Taco Bell, Dunkin', KFC, Pizza Hut and Culver's).
+  Its product family includes HotSchedules for scheduling, Fourth iQ for restaurant
+  performance, Human Capital Management for talent and payroll, and Adaco inventory
+  for hotels. Fourth publishes a developer portal of REST APIs covering POS
+  transactions, recipe & menu engineering, menu cycles, workforce (UK employee,
+  labor productivity, schedules), notifications, tasks, SCIM identity provisioning,
+  and Adaco hotel inventory. APIs authenticate with OAuth 2.0 (client_credentials
+  and password grants) or Basic Auth; production and test host locations are
+  provisioned per mutual customer and are not publicly disclosed.
 url: https://raw.githubusercontent.com/api-evangelist/fourth/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,12 +20,76 @@ x-backed-by:
 - insight-partners
 x-tier: stub
 x-tier-reason: portfolio-lead
+accessModel:
+  pricing: unknown
+  onboarding: self-serve
+  trial: false
+  try_now: false
+  public: false
+  label: Self-serve signup
+  confidence: medium
+  source:
+  - authentication
+  generated: '2026-07-22'
+  method: derived
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
+image: https://www.fourth.com/themes/custom/fourth/logo.svg
 tags:
 - Company
-apis: []
+- Workforce Management
+- Restaurants
+- Hospitality
+- Inventory Management
+- Payroll
+- Scheduling
+- Human Capital Management
+- Point of Sale
+- Food and Beverage
+apis:
+- name: Fourth Notifications API
+  description: Platform notifications API secured with OAuth 2.0 (scope NotificationService).
+  humanURL: https://developer.fourth.com/en-gb/docs/notifications-api/reference
+  properties:
+  - type: APIReference
+    url: https://developer.fourth.com/en-gb/docs/notifications-api/reference
+- name: Fourth Tasks API
+  description: Task management API secured with OAuth 2.0.
+  humanURL: https://developer.fourth.com/en-gb/docs/tasks-api/reference
+  properties:
+  - type: APIReference
+    url: https://developer.fourth.com/en-gb/docs/tasks-api/reference
+- name: Fourth Account SCIM API
+  description: SCIM 2.0 user and identity provisioning for Fourth accounts.
+  humanURL: https://developer.fourth.com/en-gb/docs/fourth-account-scim-api/reference
+  properties:
+  - type: APIReference
+    url: https://developer.fourth.com/en-gb/docs/fourth-account-scim-api/reference
+- name: Fourth Schedules API
+  description: Employee scheduling data for the HotSchedules workforce platform.
+  humanURL: https://developer.fourth.com/en-gb/docs/schedules-api/reference
+  properties:
+  - type: APIReference
+    url: https://developer.fourth.com/en-gb/docs/schedules-api/reference
+- name: Fourth POS Transaction API
+  description: Point-of-sale transaction integration API.
+  humanURL: https://developer.fourth.com/en-gb/docs/pos-gateway/transaction-api-reference
+  properties:
+  - type: APIReference
+    url: https://developer.fourth.com/en-gb/docs/pos-gateway/transaction-api-reference
+- name: Fourth Recipe & Menu Engineering API
+  description: RME export and import APIs for recipe and menu data.
+  humanURL: https://developer.fourth.com/en-gb/docs/recipe-menu-engineering-export-api/reference
+  properties:
+  - type: APIReference
+    url: https://developer.fourth.com/en-gb/docs/recipe-menu-engineering-export-api/reference
+- name: Fourth Adaco Web API
+  description: Adaco hotel inventory (product catalogue, vendor, budget, requisitions, inventory).
+  humanURL: https://developer.fourth.com/en-gb/docs/adaco-product-catalog-api/reference
+  properties:
+  - type: APIReference
+    url: https://developer.fourth.com/en-gb/docs/adaco-product-catalog-api/reference
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
@@ -22,4 +97,59 @@ maintainers:
   email: info@apis.io
 common:
 - type: Website
-  url: http://www.fourth.com/
+  url: https://www.fourth.com/
+- type: DeveloperPortal
+  url: https://developer.fourth.com/en-gb
+- type: Documentation
+  url: https://developer.fourth.com/en-gb
+- type: APIReference
+  url: https://developer.fourth.com/en-gb
+- type: GettingStarted
+  url: https://developer.fourth.com/en-gb/docs/getting-started
+- type: Authentication
+  url: authentication/fourth-authentication.yml
+- type: OAuthScopes
+  url: scopes/fourth-scopes.yml
+- type: Support
+  url: https://www.fourth.com/support/customer-support
+- type: Blog
+  url: https://www.fourth.com/resources
+- type: Login
+  url: https://secure.na1.fourth.com
+- type: TermsOfService
+  url: https://www.fourth.com/legal/legal-terms-and-policies
+- type: PrivacyPolicy
+  url: https://www.fourth.com/legal/privacy-policy
+- type: StatusPage
+  url: https://status.fourth.com
+- type: Lifecycle
+  url: lifecycle/fourth-lifecycle.yml
+- type: Deprecation
+  url: https://developer.fourth.com/en-gb/docs/whats-new
+- type: ChangeLog
+  url: changelog/fourth-changelog.yml
+- type: Webhooks
+  url: https://developer.fourth.com/en-gb/docs/notifications-api/reference
+- type: Conformance
+  url: conformance/fourth-conformance.yml
+- type: Compliance
+  url: https://www.fourth.com/legal/fourth-hosting-data-security
+- type: TrustCenter
+  url: security/fourth-trust-center.yml
+- type: Security
+  url: https://www.fourth.com/.well-known/security.txt
+- type: VulnerabilityDisclosure
+  url: security/fourth-vulnerability-disclosure.yml
+- type: SecurityTxt
+  url: well-known/fourth-security.txt
+- type: WellKnown
+  url: well-known/fourth-well-known.yml
+- type: DomainSecurity
+  url: security/fourth-domain-security.yml
+- type: LLMsTxt
+  url: llms/fourth-llms.txt
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence

@@ -1,0 +1,35 @@
+# Fourth
+
+> Fourth is an AI-powered workforce management and inventory platform built for restaurants and hospitality, uniting recruiting, HR, payroll, labor scheduling, purchasing and inventory (including the HotSchedules and Adaco products) across 120,000+ locations globally. Fourth exposes a developer portal of REST APIs for POS, inventory/recipe, workforce and identity integration. Production and test host locations are provisioned per mutual customer and are not publicly disclosed.
+
+## APIs
+- [POS Transaction API](https://developer.fourth.com/en-gb/docs/pos-gateway/transaction-api-reference): Point-of-sale transaction integration.
+- [POS Gateway API](https://developer.fourth.com/en-gb/docs/pos-gateway-old/reference): Legacy POS gateway.
+- [RME Export API](https://developer.fourth.com/en-gb/docs/recipe-menu-engineering-export-api/reference): Recipe & Menu Engineering export.
+- [RME Import API](https://developer.fourth.com/en-gb/docs/recipe-menu-engineering-import-api/reference): Recipe & Menu Engineering import.
+- [Menu Cycles API](https://developer.fourth.com/en-gb/docs/menu-cycles-api/reference): Menu cycle management.
+- [Fourth Account SCIM API](https://developer.fourth.com/en-gb/docs/fourth-account-scim-api/reference): SCIM 2.0 user/identity provisioning.
+- [Notifications API](https://developer.fourth.com/en-gb/docs/notifications-api/reference): Platform notifications (OAuth scope NotificationService).
+- [Tasks API](https://developer.fourth.com/en-gb/docs/tasks-api/reference): Task management.
+- [UK Employee API](https://developer.fourth.com/en-gb/docs/uk-employee-api/reference): UK workforce/employee data.
+- [Labor Productivity API](https://developer.fourth.com/en-gb/docs/labor-productivity-api/reference): Labor productivity metrics.
+- [Schedules API](https://developer.fourth.com/en-gb/docs/schedules-api/reference): Employee scheduling.
+- [Adaco Web API](https://developer.fourth.com/en-gb/docs/adaco-product-catalog-api/reference): Adaco hotel inventory (product catalogue, vendor, budget, requisitions, inventory).
+
+## Docs
+- [Developer Portal](https://developer.fourth.com/en-gb): API documentation home.
+- [Getting Started](https://developer.fourth.com/en-gb/docs/getting-started): Onboarding and credential provisioning.
+- [Authenticating with OAuth](https://developer.fourth.com/en-gb/docs/authenticating-oauth): OAuth 2.0 (client_credentials + password), token endpoint [ROOT]/oauth/connect/token.
+- [What's New](https://developer.fourth.com/en-gb/docs/whats-new): Changelog / release notices.
+- [Integration Options](https://developer.fourth.com/en-gb/docs/integration-options): Integration approaches.
+- [Integration Partners](https://www.fourth.com/partner/integrations): POS, job board, food-safety and distributor partners.
+
+## Security
+- [security.txt](https://www.fourth.com/.well-known/security.txt): Contact security@fourth.com.
+- [Hosting & Data Security](https://www.fourth.com/legal/fourth-hosting-data-security): ISAE 3402/3000 (SOC 2) Type II, ISO 27001, SOC 1/2/3, ISO 9001.
+- [Status Page](https://status.fourth.com): Atlassian Statuspage, US/EMEA/APAC regions.
+
+## Legal
+- [Privacy Policy](https://www.fourth.com/legal/privacy-policy)
+- [Legal Terms & Policies](https://www.fourth.com/legal/legal-terms-and-policies)
+- [Data Processing Agreement](https://www.fourth.com/legal/data-processing-agreement)

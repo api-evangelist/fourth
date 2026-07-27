@@ -1,0 +1,16 @@
+generated: '2026-07-19'
+method: searched
+source: https://developer.fourth.com/en-gb/docs/whats-new
+docs: https://developer.fourth.com/en-gb/docs/whats-new
+scheme: dated
+notes: >-
+  The developer portal "What's New" page aggregates platform-wide notices; each API
+  (UK Employee, Labor Productivity, Schedules, etc.) also keeps its own release-notes
+  page. Only the platform-wide dated entry below was captured verbatim.
+entries:
+- date: '2023-08-20'
+  api: All Fourth APIs / Platform
+  breaking: true
+  highlights: >-
+    Platform security update: TLS 1.2 or higher required for all API connections
+    from 9 January 2024; older TLS versions retired.

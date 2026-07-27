@@ -1,0 +1,28 @@
+generated: '2026-07-19'
+method: searched
+source: https://www.fourth.com/legal/fourth-hosting-data-security
+url: https://www.fourth.com/legal/fourth-hosting-data-security
+certifications:
+- ISAE 3402 Type II
+- ISAE 3000 (SOC 2) Type II
+- ISO 27001
+- SOC 1
+- SOC 2
+- SOC 3
+- ISO 9001:2015
+programs:
+- name: Fourth company-level assurance
+  certifications: [ISAE 3402 Type II, ISAE 3000 (SOC 2) Type II]
+- name: Data-centre level
+  certifications: [ISO 27001, SOC 1, SOC 2, SOC 3]
+- name: Payroll bureau (UK)
+  certifications: [PAYE Recognition, CIPP Payroll Assurance Scheme (PAS), Bacs Bureau Approved (BAB)]
+- name: Payroll bureau (USA)
+  certifications: [ISO 9001:2015, Certified Professional Employer Organization (CPEO)]
+evidence:
+- source: https://www.fourth.com/legal/fourth-hosting-data-security
+  keywords: [isae 3402, soc 2, iso 27001, soc 1/2/3, hosting & data security]
+notes: >-
+  Fourth publishes its security/compliance posture on the Hosting & Data Security
+  legal page rather than a dedicated trust.fourth.com portal. No PCI DSS, HIPAA or
+  FedRAMP claim was found.

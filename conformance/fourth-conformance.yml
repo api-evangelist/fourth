@@ -1,0 +1,32 @@
+generated: '2026-07-19'
+method: searched
+source: https://developer.fourth.com/en-gb/docs/authenticating-oauth
+standards:
+- id: oauth2
+  conforms: true
+  evidence: >-
+    Developer portal documents OAuth 2.0 with client_credentials and password
+    grants, token endpoint [ROOT]/oauth/connect/token, Bearer access tokens.
+- id: saml-sso
+  conforms: true
+  evidence: Developer portal documents SAML & Single Sign-On plus Federated Authentication.
+- id: scim2
+  conforms: true
+  evidence: Fourth Account SCIM API (System for Cross-domain Identity Management 2.0) reference published.
+- id: tls1.2
+  conforms: true
+  evidence: >-
+    Platform requires TLS 1.2 or higher for all API connections (breaking-change
+    notice 2023-08-20, enforced 2024-01-09).
+- id: soc2
+  conforms: true
+  evidence: ISAE 3000 (SOC 2) Type II at company level; SOC 1/2/3 at data-centre level (Hosting & Data Security).
+- id: iso27001
+  conforms: true
+  evidence: ISO 27001 certified data centres (Hosting & Data Security legal page).
+- id: rfc9457-problem-details
+  conforms: false
+- id: fhir-r4
+  conforms: false
+- id: fapi
+  conforms: false
